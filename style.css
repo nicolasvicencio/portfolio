@@ -548,7 +548,7 @@ progress::-moz-progress-bar {
   width: 100%;
   height: var(--header-height);
   background-color: var(--second-color);
-  overflow-x: hidden;
+  
 }
 
 .header > .container {
