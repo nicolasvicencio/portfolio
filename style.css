@@ -36,7 +36,6 @@ html {
 }
 
 body {
-  margin-top: 0;
   margin: 0;
   overflow-x: hidden;
   color: var(--text-color);
@@ -127,9 +126,12 @@ p {
   transition: transform 500ms ease-in-out;
   padding-left: 0;
   animation: carousel-slide 12s ease-in-out 3s;
-  overflow-x: hidden;
 }
 
+.carousel .slide blockquote {
+margin: 0;  
+font-size: .85rem;
+}
 .carousel input {
   display: none;
 }
@@ -262,7 +264,7 @@ p {
 
 .hero-img-opacity {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
