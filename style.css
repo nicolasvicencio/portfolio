@@ -127,6 +127,7 @@ p {
   transition: transform 500ms ease-in-out;
   padding-left: 0;
   animation: carousel-slide 12s ease-in-out 3s;
+  overflow-x: hidden;
 }
 
 .carousel input {
