@@ -1,11 +1,11 @@
 /* ********* Custom Properties ********* */
 /* #d90062 */
 :root {
-  --first-color: #d90062;
-  --first-alpha-color: rgba(217, 0, 98, 0.75);
+  --first-color: #46D292;
+  --first-alpha-color: hsla(153, 61%, 55%, 0.75);
   --second-color: #14192d;
   --second-alpha-color: rgba(20, 25, 45, 0.75);
-  --third-color: #501464;
+  --third-color: #144d64;
   --third-alpha-color: rgba(80, 20, 100, 0.75);
   --white-color: #fff;
   --gray-light-color: #f3f3f3;
@@ -39,6 +39,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   color: var(--text-color);
+  
 }
 
 a {
@@ -400,15 +401,16 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-color: var(--gray-dark-color);
+  background-color: var(--first-alpha-color);
 }
 
 progress::-moz-progress-bar {
-  background-color: var(--gray-dark-color);
+  background-color: var(--first-alpha-color);
 }
 
 .progress {
   margin: 1rem;
+  margin-left: 0;
 }
 
 .progress > p {
@@ -450,6 +452,7 @@ progress::-moz-progress-bar {
   color: var(--white-color);
   background-color: var(--first-color);
 }
+
 
 .container {
   margin-left: auto;
@@ -510,6 +513,12 @@ progress::-moz-progress-bar {
 /*  ********* Site Styles *********  */
 .about > article {
   margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-img{
+  max-width: 8rem;
+  text-align: right;
 }
 .contact-card{
   margin: 1rem auto;
@@ -699,10 +708,14 @@ progress::-moz-progress-bar {
   }
   .about {
     display: grid;
-    grid-template-columns: repeat(3, 30%);
-    justify-content: space-between;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: space-evenly;
     align-content: center;
   }
+
+  
+
+
 
   .footer{
     margin-bottom: 0;
