@@ -1,7 +1,7 @@
 /* ********* Custom Properties ********* */
 /* #d90062 */
 :root {
-  --first-color: #46D292;
+  --first-color: #2aad72bf;
   --first-alpha-color: hsla(153, 61%, 55%, 0.75);
   --second-color: #14192d;
   --second-alpha-color: rgba(20, 25, 45, 0.75);
@@ -91,6 +91,8 @@ p {
 }
 
 /*  ********* Components *********  */
+
+
 /*  ********* Carousel *********  */
 
 @keyframes carousel-slide{
@@ -629,6 +631,14 @@ progress::-moz-progress-bar {
   margin-bottom: 1.25rem;
 }
 
+.services-card-icon svg{
+  width: 2.5rem;
+  height: auto;
+  margin-top: 1rem;  
+  fill: var(--first-color);
+}
+
+
 .social-media a {
   text-decoration: none;
   padding: 0 0.4rem;
@@ -653,6 +663,12 @@ progress::-moz-progress-bar {
   color: var(--title-color);
 }
 
+.portfolio-modal > img {
+width: 400px;
+height: 200px;
+
+}
+
 .portfolio-details {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -671,10 +687,9 @@ progress::-moz-progress-bar {
 }
 
   .portfolio > .container {
-
     display: grid;
     grid-template-columns: repeat(2, 45%);
-    grid-gap: 0.4rem;
+    grid-gap: 1rem;
   }
   .portfolio > .container > h2 {
     grid-column: span 2;
@@ -713,6 +728,7 @@ progress::-moz-progress-bar {
     align-content: center;
   }
 
+ 
   
 
 
@@ -727,13 +743,7 @@ progress::-moz-progress-bar {
     height: calc(var(--header-height) - 0.5rem);
   }
 
-  .portfolio > .container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .portfolio > .container > h2 {
-    grid-column: span 3;
-  }
-
+ 
   .services > .container {
     grid-template-columns: repeat(3, 30%);
   }
